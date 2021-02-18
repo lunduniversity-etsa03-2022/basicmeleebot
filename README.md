@@ -1,5 +1,5 @@
 # BasicMeleeBot
-[![Build Status](https://travis-ci.com/lunduniversity-etsa03-2020/basicmeleebot.svg?branch=master)](https://travis-ci.com/lunduniversity-etsa03-2020/basicmeleebot)
+[![Build+Test](https://github.com/lunduniversity-etsa03-2021/basicmeleebot/workflows/Build+Test/badge.svg)](https://github.com/lunduniversity-etsa03-2021/basicmeleebot/actions?query=workflow%3ABuild+Test+branch%3Amaster)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9430e0281aa919dd591f/maintainability)](https://codeclimate.com/github/lunduniversity-etsa03-2020/basicmeleebot/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9430e0281aa919dd591f/test_coverage)](https://codeclimate.com/github/lunduniversity-etsa03-2020/basicmeleebot/test_coverage)
 [![CodeScene Code Health](https://codescene.io/projects/7292/status-badges/code-health)](https://codescene.io/projects/7292)
