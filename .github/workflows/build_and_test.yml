@@ -58,7 +58,7 @@ jobs:
     - name: "Test coverage publish"
       uses: paambaati/codeclimate-action@v2.7.5
       env:
-        CC_TEST_REPORTER_ID: ec2cc556f162ea59e9cc151576aed623d57f930f45ab8698b6408666a48fd176
+        CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
         JACOCO_SOURCE_PATH: "${{github.workspace}}/BasicMeleeBot/src/main/java"
       with:
         # The report file must be there, otherwise Code Climate won't find it      
