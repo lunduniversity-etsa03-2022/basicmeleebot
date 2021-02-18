@@ -63,7 +63,7 @@ jobs:
       with:
         # The report file must be there, otherwise Code Climate won't find it      
         debug: true
-        prefix: BasicMeleeBot
+        prefix: ${{github.workspace}}
         coverageLocations: |
           ${{github.workspace}}/BasicMeleeBot/build/customJacocoReportDir/test/jacocoTestReport.xml:jacoco
         
