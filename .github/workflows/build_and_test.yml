@@ -49,7 +49,7 @@ jobs:
             body: '${{ github.workflow }} succeeded: ${{ steps.gradle.outputs.build-scan-url }}'
           })
   coverage:
-    needs: [ Build+Test ]
+    needs: [ gradle ]
     name: Publish coverage report
     runs-on: ubuntu-latest
     steps:
