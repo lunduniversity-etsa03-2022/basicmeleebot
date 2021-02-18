@@ -48,14 +48,22 @@ jobs:
             repo: context.repo.repo,
             body: '${{ github.workflow }} succeeded: ${{ steps.gradle.outputs.build-scan-url }}'
           })
-  coverage:
-    needs: [ gradle ]
-    name: Publish coverage report
-    runs-on: ubuntu-latest
-    steps:
-      - uses: paambaati/codeclimate-action@v2.2.4
-        env:
-          CC_TEST_REPORTER_ID: ec2cc556f162ea59e9cc151576aed623d57f930f45ab8698b6408666a48fd176
-        with:
-            coverageCommand: npm run coverage
-            debug: true
+    - name: "Test coverage measurement" 
+      uses: eskatos/gradle-command-action@v1
+      if: success()
+      with:
+        arguments: jacocoTestReport
+        build-root-directory: BasicMeleeBot
+        wrapper-directory: BasicMeleeBot
+    - name: "Test coverage publish"
+      uses: paambaati/codeclimate-action@v2.7.5
+      env:
+        CC_TEST_REPORTER_ID: ec2cc556f162ea59e9cc151576aed623d57f930f45ab8698b6408666a48fd176
+        JACOCO_SOURCE_PATH: "${{github.workspace}}/BasicMeleeBot/src/main/java"
+      with:
+        # The report file must be there, otherwise Code Climate won't find it      
+        debug: true
+        prefix: BasicMeleeBot
+        coverageLocations: |
+          ${{github.workspace}}/BasicMeleeBot/build/customJacocoReportDir/test/jacocoTestReport.xml:jacoco
+        
