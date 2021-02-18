@@ -16,12 +16,12 @@ jobs:
       with:
         java-version: 11
     - name: Grant execute permission for gradlew
-      run: chmod +x ProtoBot/gradlew
+      run: chmod +x BasicMeleeBot/gradlew
     - uses: eskatos/gradle-command-action@v1
       with:
         arguments: build
-        build-root-directory: ProtoBot
-        wrapper-directory: ProtoBot
+        build-root-directory: BasicMeleeBot
+        wrapper-directory: BasicMeleeBot
   coverage:
     needs: [ gradle ]
     name: Send Coverage
