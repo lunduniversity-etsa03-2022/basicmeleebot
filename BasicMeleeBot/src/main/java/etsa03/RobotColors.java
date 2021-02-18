@@ -16,7 +16,9 @@ import java.awt.*;
  * @author Flemming N. Larsen (contributor)
  */
 public class RobotColors implements java.io.Serializable {
+
 	private static final long serialVersionUID = 1L;
+	
 	public Color bodyColor;
 	public Color gunColor;
 	public Color radarColor;
