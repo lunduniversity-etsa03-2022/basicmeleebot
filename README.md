@@ -2,7 +2,6 @@
 [![Build+Test](https://github.com/lunduniversity-etsa03-2021/basicmeleebot/workflows/Build+Test/badge.svg)](https://github.com/lunduniversity-etsa03-2021/basicmeleebot/actions?query=workflow%3ABuild%2BTest+branch%3Amaster)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1cbcfd20b4d34ffdcd41/maintainability)](https://codeclimate.com/repos/602e2c7453e24101b700bdff/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1cbcfd20b4d34ffdcd41/test_coverage)](https://codeclimate.com/repos/602e2c7453e24101b700bdff/test_coverage)
-[![CodeScene Code Health](https://codescene.io/projects/7292/status-badges/code-health)](https://codescene.io/projects/7292)
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
 
@@ -10,7 +9,7 @@ This repository contains BasicMeleeBot. This repository is an example used to in
 
 ## License
 
-Copyright © 2020. Dept. of Computer Science at Lund University, Lund, Sweden.
+Copyright © 2020-2021. Dept. of Computer Science at Lund University, Lund, Sweden.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
