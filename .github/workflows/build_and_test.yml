@@ -48,11 +48,8 @@ jobs:
             repo: context.repo.repo,
             body: '${{ github.workflow }} succeeded: ${{ steps.gradle.outputs.build-scan-url }}'
           })  
-  coverage:
-    needs: [ gradle ]
-    name: Send Coverage
-    runs-on: ubuntu-latest
     steps:
+    - name: coverage
     - uses: paambaati/codeclimate-action@v2.2.4
     env:
       CC_TEST_REPORTER_ID: ec2cc556f162ea59e9cc151576aed623d57f930f45ab8698b6408666a48fd176
