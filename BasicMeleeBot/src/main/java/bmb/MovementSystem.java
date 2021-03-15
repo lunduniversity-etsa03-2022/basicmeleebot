@@ -92,11 +92,11 @@ public class MovementSystem {
 		double angle = Math.atan2(xForce, yForce);
 		if (xForce == 0 && yForce == 0) {
 			// If no force, do nothing
-		} else if (Math.abs(angle - Utils.normalRelativeAngle(robot.getHeadingRadians())) < Math.PI / 2) {
-			robot.setTurnRightRadians(Utils.normalRelativeAngle(angle - robot.getHeadingRadians()));
+		} else if (Math.abs(Utils.normalRelativeAngle(angle - Utils.normalRelativeAngle(robot.getHeadingRadians()))) < Math.PI / 2) {
+			robot.setTurnRightRadians(Utils.normalRelativeAngle(angle - Utils.normalRelativeAngle(robot.getHeadingRadians())));
 			robot.setAhead(Double.POSITIVE_INFINITY);
 		} else {
-			robot.setTurnRightRadians(Utils.normalRelativeAngle(angle + Math.PI - robot.getHeadingRadians()));
+			robot.setTurnRightRadians(Utils.normalRelativeAngle(angle + Math.PI - Utils.normalRelativeAngle(robot.getHeadingRadians())));
 			robot.setAhead(Double.NEGATIVE_INFINITY);
 		}
 	}
