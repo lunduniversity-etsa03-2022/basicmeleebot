@@ -48,7 +48,7 @@ import robocode.control.testing.RobotTestBed;
 public class ST_Q_1vs1SpinBot extends RobotTestBed {
 	
 	// constants used to configure this system test case
-	private String ROBOT_UNDER_TEST = "se.lth.cs.etsa02.basicmeleebot.BasicMeleeBot*";
+	private String ROBOT_UNDER_TEST = "bmb.BasicMeleeBot*";
 	private String ENEMY_ROBOTS = "sample.SpinBot";
 	private int NBR_ROUNDS = 100;
 	private double THRESHOLD = 0.51; // win rate against SpinBot

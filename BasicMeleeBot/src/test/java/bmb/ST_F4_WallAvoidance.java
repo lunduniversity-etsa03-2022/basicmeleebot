@@ -48,7 +48,7 @@ import robocode.control.testing.RobotTestBed;
 public class ST_F4_WallAvoidance extends RobotTestBed {
 	
 	// constants used to configure this system test case
-	private String ROBOT_UNDER_TEST = "se.lth.cs.etsa02.BasicMeleeBot*";
+	private String ROBOT_UNDER_TEST = "bmb.BasicMeleeBot*";
 	private String ENEMY_ROBOTS = "sample.SittingDuck,sample.SittingDuck";
 	private int NBR_ROUNDS = 100;
 	
@@ -71,7 +71,7 @@ public class ST_F4_WallAvoidance extends RobotTestBed {
 	@Override
 	public String getRobotNames() {
 		// Battle between BMB and two SittingDucks
-		return "se.lth.cs.etsa02.basicmeleebot.BasicMeleeBot*,"
+		return "bmb.BasicMeleeBot*,"
 				+ "sample.SittingDuck,sample.SittingDuck";
 	}
 

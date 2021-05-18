@@ -32,6 +32,7 @@ dependencies {
 }
 
 test {
+	exclude '**/SystemTest*'
 	exclude '**/ST_*'
 }
 

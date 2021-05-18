@@ -44,7 +44,7 @@ import robocode.control.testing.RobotTestBed;
 public class ST_Q_MeleeSpinBots extends RobotTestBed {
 	
 	// constants used to configure this system test case
-	private String ROBOT_UNDER_TEST = "se.lth.cs.etsa02.basicmeleebot.BasicMeleeBot*";
+	private String ROBOT_UNDER_TEST = "bmb.BasicMeleeBot*";
 	private String ENEMY_ROBOTS = "sample.SpinBot,sample.SpinBot,sample.SpinBot";
 	private int NBR_ROUNDS = 100;
 	private double THRESHOLD = 0.26; // win rate in melee battles against 3 SpinBots
@@ -151,7 +151,7 @@ public class ST_Q_MeleeSpinBots extends RobotTestBed {
 		// check that BMB won the overall battle
 		String robotName = bmbResults.getTeamLeaderName();		
 		assertEquals("Basic Melee Bot should be first in the results array",
-				"se.lth.cs.etsa02.basicmeleebot.BasicMeleeBot*", robotName);
+				"bmb.BasicMeleeBot*", robotName);
 		
 		// check that the required win rate has been reached
 		double bmbWinRate = (((double) bmbResults.getFirsts()) / NBR_ROUNDS);
