@@ -10,7 +10,7 @@ This repository contains BasicMeleeBot. This repository is an example used to in
 
 ## License
 
-Copyright © 2020-2021. Dept. of Computer Science at Lund University, Lund, Sweden.
+Copyright © 2020-2022. Dept. of Computer Science at Lund University, Lund, Sweden.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
